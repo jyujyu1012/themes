@@ -97,7 +97,7 @@ html, body {
   line-height: 53px;
 }
 .page-content ul li {
-  display: inline-block;
+  display: inline;
 }
 .page-content ul li:after {
   content: " / ";
