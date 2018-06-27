@@ -92,18 +92,30 @@ html, body {
   box-sizing: border-box;
   padding: 50px;
 }
-#page-content ul {
+#page-content span {
+  float: left;
+}
+#page-content #page-list {
+  float: right;
+  padding: 0;
+  font-size: 20px;
+  line-height: 0;
+}
+#page-content #page-list li {
+  display: inline-block;
+}
+#page-content #link-list {
   padding: 100px 0;
   font-size: 45px;
   line-height: 53px;
 }
-#page-content ul li {
+#page-content #link-list li {
   display: inline;
 }
-#page-content ul li:after {
+#page-content #link-list li:after {
   content: " / ";
 }
-#page-content ul li:last-child:after {
+#page-content #link-list li:last-child:after {
   content: "";
 }
 
