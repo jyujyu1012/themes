@@ -11,14 +11,15 @@
   		integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
   		crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+  	<script type="text/javascript" src="master/backgroundcheck.min.js"></script>
 	<title>themes</title>
 </head>
 <body>
-<div class="page">
-  <div class="page-content">
+<div id="page">
+  <div id="page-content">
     <p>content</p>
     <ul>
-    	<li><a href="#">Five Years</a></li>
+    	<li><a class="target" href="#">Five Years</a></li>
     	<li><a href="#">Soul Love</a></li>
     	<li><a href="#">Moonage Daydream</a></li>
     	<li><a href="#">Starman</a></li>
@@ -49,7 +50,13 @@
     	<li><a href="#">Tim Broadbent</a></li>
     	<li><a href="#">Lindsay Scott</a></li>
     </ul>
-  </div>
-</div>
+  </div><!-- #page-content -->
+</div><!-- #page -->
+<script type="text/javascript">
+BackgroundCheck.init({
+	/*ここに要素を指定*/
+	targets: '.target'
+});
+</script>
 </body>
 </html>

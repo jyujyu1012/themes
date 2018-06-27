@@ -53,17 +53,18 @@ border-spacing: 0;
 }
 body {
   background-color: #fff;
-  color: #00010c;
   width: 100vw;
   font-size: 24px;
   line-height: 20px;
 }
 a {
   text-decoration: none;
-  color:  #00010c;
 }
-a:hover {
-  color: #58f;
+a.background–light {
+color: black;
+}
+a.background–dark {
+color: white;
 }
 
 /* .page */
@@ -78,7 +79,7 @@ html, body {
   padding: 0;
 }
 
-.page {
+#page {
   position: relative;
   height: auto;
   min-height: 100%;
@@ -87,21 +88,40 @@ html, body {
   background-position: center center;
   background-size: cover;
 }
-.page-content {
+#page-content {
   box-sizing: border-box;
   padding: 50px;
 }
-.page-content ul {
+#page-content ul {
   padding: 100px 0;
   font-size: 45px;
   line-height: 53px;
 }
-.page-content ul li {
+#page-content ul li {
   display: inline;
 }
-.page-content ul li:after {
+#page-content ul li:after {
   content: " / ";
 }
-.page-content ul li:last-child:after {
+#page-content ul li:last-child:after {
   content: "";
+}
+
+#pagebg {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+#pagebg .image {
+  display: none;
+}
+#pagebg .image img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
