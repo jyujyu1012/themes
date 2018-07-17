@@ -6,15 +6,18 @@
 	<meta name="description" content="themes">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script
-  		src="https://code.jquery.com/jquery-2.2.4.js"
-  		integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-  		crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<!-- <script type="text/javascript" src="js/main.js"></script> -->
   	<script type="text/javascript" src="master/backgroundcheck.min.js"></script>
 	<title>themes</title>
+	<script type="text/javascript">
+	BackgroundCheck.init({
+		targets: 'p',
+	});
+}
+	</script>
 </head>
 <body>
+
 <div id="page">
   <div id="page-content">
     <span>content</span>
@@ -24,7 +27,7 @@
     	<li><a href="#"><img src="#"></a></li>
     </ul>
     <ul id="link-list">
-    	<li><a class="target" href="#">Five Years</a></li>
+    	<p>Five Years</p>
     	<li><a href="#">Soul Love</a></li>
     	<li><a href="#">Moonage Daydream</a></li>
     	<li><a href="#">Starman</a></li>
@@ -57,11 +60,6 @@
     </ul>
   </div><!-- #page-content -->
 </div><!-- #page -->
-<script type="text/javascript">
-BackgroundCheck.init({
-	/*ここに要素を指定*/
-	targets: '.target'
-});
-</script>
+
 </body>
 </html>
